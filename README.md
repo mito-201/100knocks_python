@@ -5,6 +5,7 @@ Pythonの学習記録です。
 - [公式Python チュートリアル](https://docs.python.org/ja/3/tutorial/index.html)
 - [Chainer チュートリアル Python 入門](https://tutorials.chainer.org/ja/tutorial.html)
 - [どっとインストール　Python入門](https://dotinstall.com/lessons/basic_python_grammar)
+  - 無料会員登録が必要。動画で学習できるため、動きが理解しやすい
 
 ## 課題
 
