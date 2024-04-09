@@ -10,7 +10,7 @@ Pythonの学習記録です。
 ## 課題
 
 - [言語処理100本ノック](https://nlp100.github.io/ja/)
-  - 難易度高そう。未実施。
+  - ./nlp100/
 
 ## 環境
 Windows11 Home ＋ DockerDesktop ＋ VScode
