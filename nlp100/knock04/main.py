@@ -9,14 +9,15 @@ string = "Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might
 
 dict = {} 
 
-for word in string.split():     # wordには、１要素の文字列が入る
-    count = 0
-    for char in word:           # charには、1文字ずつ入る
-        if char.isalpha():      # アルファベット判定を行う
-            count += 1
-    result.append(count)        # listに追加する
+id = 1
+for word in string.split():
+    dict[id] = word
+    id += 1
 
 for id in [1, 5, 6, 7, 8, 9, 15, 16, 19]:
-    dict[id] = string.split()
+    dict[id] = dict[id][0]
+
+for id in [2, 3, 4, 10, 11, 12, 13, 14, 17, 18, 20]:
+    dict[id] = dict[id][0:2]
 
 print(dict)
