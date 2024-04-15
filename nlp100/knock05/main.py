@@ -4,8 +4,16 @@
 この関数を用い，”I am an NLPer”という文から単語bi-gram，文字bi-gramを得よ．
 """
 
-string1 = "I am an NLPer"
+def get_word_n_gram(num, string):
+    result = {}
+    for word in string.split():
+        result = word
+    return result
 
-def get_n_gram(num, string):
-    #
+# def get_char_n_gram(num, string):
+    
+string = "I am an NLPer"
 
+res = get_word_n_gram(1, string)
+
+print(res)
