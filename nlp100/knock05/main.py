@@ -5,8 +5,14 @@
 """
 
 def get_word_n_gram(num, string):
+
+    # 要素ごとに分割
+    list_ = []
+    for word in string.split():
+        list_.append(word)
+
     result = {}
-    start = 1
+    start = 0
     print(len(string.split()))
     while (start + num) <= len(string.split()):
         for word in string.split():
