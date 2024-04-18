@@ -11,7 +11,7 @@ def get_word_n_gram(num, string):
     for word in string.split():
         list_.append(word)
 
-    result = {}
+    result = []
     start = 0
     print(len(string.split()))
     while (start + num) <= len(string.split()):
@@ -24,6 +24,6 @@ def get_word_n_gram(num, string):
     
 string = "I am an NLPer"
 
-res = get_word_n_gram(1, string)
+res = get_word_n_gram(2, string)
 
 print(res)
