@@ -16,7 +16,7 @@ def get_word_n_gram(num, string):
     print(len(string.split()))
     while (start + num) <= len(string.split()):
         for word in string.split():
-            result = word
+            result[4] = word
         start += 1
     return result
 
