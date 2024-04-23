@@ -6,8 +6,8 @@ import subprocess
 import sys
 
 args = sys.argv
+text = open(args[1]).read().replace("\t", " ")
+print(text)
 
-print(len(open(args[1]).readlines())) 
-
-cmd = "wc -l " + args[1]
-print(subprocess.check_output(cmd.split()).decode().split()[0])
+text2 = subprocess.run("sed 's/\t/ /' popular-names.txt", shell=True)
+print(text2)
