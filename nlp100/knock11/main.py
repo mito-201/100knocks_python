@@ -9,5 +9,5 @@ args = sys.argv
 text = open(args[1]).read().replace("\t", " ")
 print(text)
 
-text2 = subprocess.run("sed 's/\t/ /' popular-names.txt", shell=True)
-print(text2)
+text2 = subprocess.run("sed 's/\t/ /' popular-names.txt", shell=True, capture_output=True, text=True)
+print(text2.stdout)
