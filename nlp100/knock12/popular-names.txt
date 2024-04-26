@@ -1,0 +1,4 @@
+Mary	F	7065	1880
+Anna	F	2604	1880
+John	M	75991	1958
+William	M	54195	1958
