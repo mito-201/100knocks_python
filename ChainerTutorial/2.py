@@ -32,3 +32,12 @@ print(c)
 # 2.2.5. 算術演算子
 print(1 + 1)
 
+a = 1
+print(a + 2)
+
+b = 0.2
+print(a + b)
+
+print(3 / 2)
+print(4 // 2)
+
