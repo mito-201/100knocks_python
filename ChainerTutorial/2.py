@@ -89,3 +89,19 @@ print('Hello\tWorld')
 
 d = 'Hello\nWorld'
 print(d)
+
+# 2.4. 文字列メソッド
+name = 'Chainer'
+print(name)
+print(name.lower())
+print(name.upper())
+
+name = 'Chainer'
+print("{} チュートリアルへようこそ".format(name))
+
+name1 = 'Chainer'
+name2 = 'チュートリアル'
+print('{} {}へようこそ'.format(name1, name2))
+
+version = 3.7
+print('Python {}'.format(version))
