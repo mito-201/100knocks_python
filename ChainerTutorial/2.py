@@ -41,3 +41,38 @@ print(a + b)
 print(3 / 2)
 print(4 // 2)
 
+"""
+a + c
+
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-32-e81e582b6fa9> in <module>()
+----> 1 a + c
+
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+"""
+
+"""
+# str と int で乗算
+print(c * 3)
+"""
+
+name1 = 'Chainer'
+name2 = 'チュートリアル'
+print(name1 + name2)
+
+print(type(1))
+print(type(str(1)))
+print(str(1) + "番目")
+
+count = 0
+count = count + 1
+print(count)
+count = 0
+count += 1
+print(count)
+
+print(2 ** 3)
+print(9 / 2, 9 // 2, 9 % 2)
+
+# 2.2.6. 比較演算子
