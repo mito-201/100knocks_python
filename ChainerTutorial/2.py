@@ -105,3 +105,7 @@ print('{} {}へようこそ'.format(name1, name2))
 
 version = 3.7
 print('Python {}'.format(version))
+
+# 2.5. 浮動小数点数がもつメソッド
+print(0.5.as_integer_ratio())
+print(0.25.as_integer_ratio())
