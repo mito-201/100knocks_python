@@ -76,3 +76,16 @@ print(2 ** 3)
 print(9 / 2, 9 // 2, 9 % 2)
 
 # 2.2.6. 比較演算子
+print(1 < 2)
+print(type(1 < 2))
+print(2 == 5)
+print(1 != 2)
+print(3 >= 3)
+print('test' == 'test')
+
+# 2.3. エスケープシーケンス
+print('Hello\nWorld')
+print('Hello\tWorld')
+
+d = 'Hello\nWorld'
+print(d)
