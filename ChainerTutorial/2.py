@@ -109,3 +109,41 @@ print('Python {}'.format(version))
 # 2.5. 浮動小数点数がもつメソッド
 print(0.5.as_integer_ratio())
 print(0.25.as_integer_ratio())
+
+# 2.6.1. リスト
+numbers = [4, 5, 6, 7]
+print(numbers)
+print(type(numbers))
+
+print(len(numbers))
+print(numbers[0])
+print(numbers[2])
+
+numbers[1] = 10
+print(numbers[1])
+print(numbers)
+
+print(numbers[-1])
+print(numbers[-3])
+
+print(numbers[0:2])
+print(numbers[:2])
+print(numbers[1:])
+print(numbers[:])
+
+array = ['hello', 'world']
+print(array)
+
+array = [1, 1.2, 'Chainer']
+print(array)
+
+array = [[1, 1.2, 'Chainer', True], [3.2, 'Tutorial']]
+print(array)
+
+array.append(2.5)
+print(array)
+
+array = []
+array.append('Chainer')
+array.append('チュートリアル')
+print(array)
