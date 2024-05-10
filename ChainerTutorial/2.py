@@ -166,3 +166,18 @@ Traceback (most recent call last):
 TypeError: 'tuple' object does not support item assignment
 """
 
+# 2.6.3. 辞書
+scores = {'Math': 90, 'Science': 75, 'English': 80 }
+print(scores)
+print(scores['Math'])
+
+scores = {'数学': 90, '理科': 75, '英語': 80}
+print(scores)
+print(scores['数学'])
+
+print(scores.keys())
+print(scores.values())
+print(scores.items())
+
+scores['国語'] = 85
+print(scores)
