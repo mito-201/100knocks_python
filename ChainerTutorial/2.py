@@ -147,3 +147,22 @@ array = []
 array.append('Chainer')
 array.append('チュートリアル')
 print(array)
+
+# 2.6.2. タプル
+array = (4, 5, 6, 7)
+print(array)
+print(type(array))
+
+print(array[0])
+print(array[:3])
+
+"""
+array[0] = 10
+
+Traceback (most recent call last):
+  File "/workspaces/100knocks_python/ChainerTutorial/2.py", line 159, in <module>
+    array[0] = 10
+    ~~~~~^^^
+TypeError: 'tuple' object does not support item assignment
+"""
+
