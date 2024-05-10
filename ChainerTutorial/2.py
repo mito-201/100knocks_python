@@ -181,3 +181,5 @@ print(scores.items())
 
 scores['国語'] = 85
 print(scores)
+
+# 2.7.1. 繰り返し（for 文
