@@ -9,6 +9,8 @@ Pythonの学習記録です。
 
 ## 課題
 
+- [Chainer チュートリアル Python 入門](https://tutorials.chainer.org/ja/tutorial.html)
+  - ./ChainerTutorial
 - [言語処理100本ノック](https://nlp100.github.io/ja/)
   - ./nlp100/
 

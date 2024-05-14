@@ -183,3 +183,28 @@ scores['国語'] = 85
 print(scores)
 
 # 2.7.1. 繰り返し（for 文
+for i in range(5):
+    print(i)
+print(i)
+
+names = ['佐藤', '鈴木', '高橋']
+for i in range(3):
+    print('{}さん'.format(names[i]))
+
+print(len(names))
+
+for i in range(len(names)):
+    print('{}さん'.format(names[i]))
+
+for name in names:
+    print('{}さん'.format(name))
+
+for i, name in enumerate(names):
+    message = '{}番目：{}さん'.format(i, name)
+    print(message)
+
+names = ['Python', 'Chainer']
+versions = ['3.7', '5.3.0']
+suffixes = ['!!', '!!', '?']
+for name, version, suffix in zip(names, versions, suffixes):
+    print('{} {} {}'.format(name, version, suffix))
