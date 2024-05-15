@@ -208,3 +208,24 @@ versions = ['3.7', '5.3.0']
 suffixes = ['!!', '!!', '?']
 for name, version, suffix in zip(names, versions, suffixes):
     print('{} {} {}'.format(name, version, suffix))
+
+# 2.7.2. 条件分岐（if 文）
+a = 1
+if a > 0:
+    print('0より大きいです')
+else:
+    print('0以下です')
+
+a = -1
+if a > 0:
+    print('0より大きいです')
+else:
+    print('0以下です')
+
+a = 0
+if a > 0:
+    print('0より大きいです')
+elif a == 0:
+    print('0です')
+else:
+    print('0より小さいです')
