@@ -265,3 +265,22 @@ def double(x):
 double(3)
 double(5)
 double(1.5)
+
+# 2.8.2. 複数の引数をとる関数
+def add(a, b):
+    print(a + b)
+add(1, 2)
+add(3, 2.5)
+add(1, -5)
+
+# 2.8.3. 引数をとらない関数
+def hello():
+    print('Chainerチュートリアルへようこそ')
+hello()
+
+# 2.8.4. 引数のデフォルト値
+def hello1(message='Chainerチュートリアルにようこそ1'):
+    print(message)
+hello1()
+
+hello1('Welcome to Chainer tutorial')
