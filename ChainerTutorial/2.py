@@ -252,3 +252,16 @@ count = 0
 while not count == 3:
     print(count)
     count += 1
+
+# 2.8.1. 関数を定義する
+"""
+関数 double() の定義
+"""
+def double(x):
+    print(2 * x)
+"""
+関数の実行
+"""
+double(3)
+double(5)
+double(1.5)
