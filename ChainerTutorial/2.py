@@ -229,3 +229,26 @@ elif a == 0:
     print('0です')
 else:
     print('0より小さいです')
+
+# 2.7.3. 繰り返し（while 文）
+count = 0
+while count < 3:
+    print(count)
+    count += 1
+
+count = 0
+while True:
+    print(count)
+    count += 1
+
+    if count == 3:
+            break
+
+print(not True)
+print(not False)
+print(not 1 == 2)
+
+count = 0
+while not count == 3:
+    print(count)
+    count += 1
