@@ -284,3 +284,15 @@ def hello1(message='Chainerチュートリアルにようこそ1'):
 hello1()
 
 hello1('Welcome to Chainer tutorial')
+
+# 2.8.5. 返り値のある関数
+def add(a, b):
+    return a + b
+result = add(1, 3)
+print(result)
+
+result = add(1, 3)
+result_doubled = result * 2
+print(result_doubled)
+
+print(add(2, 3) * add(1, 3))
