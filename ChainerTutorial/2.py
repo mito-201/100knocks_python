@@ -296,3 +296,23 @@ result_doubled = result * 2
 print(result_doubled)
 
 print(add(2, 3) * add(1, 3))
+
+# 2.8.6. 変数のスコープ
+a = 1
+def change():
+    a = 2
+change()
+print(a)
+
+a = 1
+def change():
+    print('From inside:', a)
+change()
+print('From outside:', a)
+
+a = 1
+def change():
+    global a  # a をグローバル変数である宣言
+    a = 2
+change()
+print(a)    # 結果の確認 <- a の値が上書きされている
