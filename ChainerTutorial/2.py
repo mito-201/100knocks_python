@@ -316,3 +316,24 @@ def change():
     a = 2
 change()
 print(a)    # 結果の確認 <- a の値が上書きされている
+
+# 2.9.1. クラスの定義
+"""クラスの定義"""
+class House:
+    def __init__(self, name):  # __init__()は、インスタンス化する際に自動的に呼ばれるメソッド
+        self.name_plate = name
+
+my_house = House('Chainer')
+print(my_house.name_plate)
+
+class House:
+    def __init__(self, name):
+        self.name_plate = name
+    
+    def hello(self):
+        print('{}の家です'.format(self.name_plate))
+
+sato = House('佐藤')
+suzuki = House('スズキ')
+sato.hello()
+suzuki.hello()
