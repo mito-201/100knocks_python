@@ -337,3 +337,60 @@ sato = House('佐藤')
 suzuki = House('スズキ')
 sato.hello()
 suzuki.hello()
+
+# 2.9.2. 継承
+class Link:
+    def __init__(self):
+        self.a = 1
+        self.b = 2
+l = Link()
+print(l.a)
+print(l.b)
+
+class Chain(Link):
+    def sum(self):
+        return self.a + self.b
+c = Chain()
+print(c.a)
+print(c.b)
+print(c.sum())
+
+"""
+# エラーの確認
+class Chain(Link):
+    def __init__(self):
+        self.c = 5
+    
+    def sum(self):
+        return self.a + self.b + self.c
+
+C = Chain()
+print(C.sum())
+
+# エラーメッセージ
+Traceback (most recent call last):
+  File "/workspaces/100knocks_python/ChainerTutorial/2.py", line 366, in <module>
+    print(C.sum())
+          ^^^^^^^
+  File "/workspaces/100knocks_python/ChainerTutorial/2.py", line 363, in sum
+    return self.a + self.b + self.c
+           ^^^^^^
+AttributeError: 'Chain' object has no attribute 'a'
+"""
+
+class Chain(Link):
+    def __init__(self):
+        super().__init__()
+        self.c = 5
+    
+    def sum(self):
+        return self.a + self.b + self.c
+
+C = Chain()
+print(C.sum())
+
+class MyNetwork(Chain):
+    def mul(self):
+        return self.a * self.b * self.c
+net = MyNetwork()
+print(net.mul())
